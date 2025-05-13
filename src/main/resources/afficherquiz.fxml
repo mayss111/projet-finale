@@ -4,16 +4,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.Light.Distant?>
-<?import javafx.scene.effect.Lighting?>
-<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherQuizController" >
+<AnchorPane prefHeight="410.0" prefWidth="600.0" style="-fx-background-color: FFF8B4FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherQuizController">
     <children>
       <Label layoutX="112.0" layoutY="29.0" prefHeight="54.0" prefWidth="449.0" text="Afficher Les Quiz" wrapText="true">
          <font>
@@ -36,38 +33,8 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="Acceuil" layoutX="112.0" layoutY="343.0" mnemonicParsing="false" onAction="#Acceuil" prefHeight="26.0" prefWidth="150.0" text="Acceuil" underline="true">
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant>
-                     <color>
-                        <Color red="0.2529122829437256" green="0.5368421077728271" blue="0.23263157904148102" />
-                     </color>
-                  </Light.Distant>
-               </light>
-            </Lighting>
-         </effect>
-      </Button>
-      <Button fx:id="Quitter" layoutX="323.0" layoutY="343.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="26.0" prefWidth="150.0" text="Quitter" underline="true">
-         <effect>
-            <Lighting>
-               <bumpInput>
-                  <Shadow />
-               </bumpInput>
-               <light>
-                  <Light.Distant>
-                     <color>
-                        <Color red="0.2529122829437256" green="0.5368421077728271" blue="0.23263157904148102" />
-                     </color>
-                  </Light.Distant>
-               </light>
-            </Lighting>
-         </effect>
-      </Button>
+      <Button fx:id="Acceuil" layoutX="112.0" layoutY="343.0" mnemonicParsing="false" onAction="#Acceuil" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Acceuil" underline="true" />
+      <Button fx:id="Quitter" layoutX="323.0" layoutY="343.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Quitter" underline="true" />
       <TableView fx:id="tableview" layoutX="100.0" layoutY="94.0" prefHeight="200.0" prefWidth="450.0">
         <columns>
           <TableColumn fx:id="idqtv" prefWidth="65.5999755859375" text="idq" />
