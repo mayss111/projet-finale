@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherQuizController" >
+    <children>
+      <Label layoutX="112.0" layoutY="29.0" prefHeight="54.0" prefWidth="449.0" text="Afficher Les Quiz" wrapText="true">
+         <font>
+            <Font name="Corbel Light" size="46.0" />
+     git --    </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.7017045165553236" endY="0.4583333035310109" startX="0.6486742424242424" startY="0.5909091053587017">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.271968811750412" green="0.6736842393875122" blue="0.41926446557044983" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04210526496171951" green="0.041793372482061386" blue="0.041793372482061386" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="Acceuil" layoutX="112.0" layoutY="343.0" mnemonicParsing="false" onAction="#Acceuil" prefHeight="26.0" prefWidth="150.0" text="Acceuil" underline="true">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.2529122829437256" green="0.5368421077728271" blue="0.23263157904148102" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="Quitter" layoutX="323.0" layoutY="343.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="26.0" prefWidth="150.0" text="Quitter" underline="true">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.2529122829437256" green="0.5368421077728271" blue="0.23263157904148102" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TableView fx:id="tableview" layoutX="100.0" layoutY="94.0" prefHeight="200.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="idqtv" prefWidth="65.5999755859375" text="idq" />
+          <TableColumn fx:id="questiontv" prefWidth="83.20001220703125" text="question" />
+            <TableColumn fx:id="prop1tv" prefWidth="81.60003662109375" text="prop1" />
+            <TableColumn fx:id="prop2tv" prefWidth="64.0" text="prop2" />
+            <TableColumn fx:id="propctv" prefWidth="76.79998779296875" text="propc" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

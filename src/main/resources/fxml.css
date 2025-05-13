@@ -1,0 +1,45 @@
+.post-background{
+    -fx-background-color: #fff;
+    -fx-background-radius:15;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.1,0.0,0.0,5.0);
+}
+.reaction-container{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 50;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),5.1,0.0,0.0,5.0);
+
+    -fx-border-width: 1;
+    -fx-border-color: #8889BB;
+    -fx-border-radius: 50;
+
+
+
+
+}
+.tob-border{
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #606266;
+
+}
+.round-button{
+    -fx-background-color: #F8F2F5;
+    -fx-border-radius: 50;
+
+
+}
+.white-background{
+    -fx-background-color: #fff;
+
+}
+.body-background{
+    -fx-background-color: #F8F2F5;
+}
+.text_field{
+    -fx-background-color: #F8F2F5;
+    -fx-border-radius: 50;
+
+}
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+
+}

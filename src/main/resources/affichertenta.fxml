@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherTentaController" stylesheets="@styles.css">
+   <children>
+      <TableView fx:id="tentativeTable" layoutX="53.0" layoutY="89.0" prefHeight="231.0" prefWidth="499.0">
+         <columns>
+            <TableColumn fx:id="idtCol" text="ID Tentative" prefWidth="90"/>
+            <TableColumn fx:id="idquizCol" text="ID Quiz" prefWidth="90"/>
+            <TableColumn fx:id="idqCol" text="ID Question" prefWidth="90"/>
+            <TableColumn fx:id="idetudCol" text="ID Étudiant" prefWidth="110"/>
+            <TableColumn fx:id="reponseCol" text="Bonne Réponse" prefWidth="110"/>
+         </columns>
+      </TableView>
+
+      <Label layoutX="75.0" layoutY="21.0" prefHeight="54.0" prefWidth="449.0" text="Afficher les tentatives" wrapText="true">
+         <font>
+            <Font name="Corbel Light" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.7" endY="0.45" startX="0.64" startY="0.59">
+               <stops>
+                  <Stop offset="0.0">
+                     <color>
+                        <Color red="0.27" green="0.67" blue="0.42" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04" green="0.04" blue="0.04" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+
+      <Button fx:id="goacceuil" layoutX="100.0" layoutY="343.0" mnemonicParsing="false" onAction="#naviguerAcceuil" prefHeight="26.0" prefWidth="150.0" text="Accueil" underline="true"/>
+
+      <Button fx:id="quitter" layoutX="330.0" layoutY="343.0" mnemonicParsing="false" onAction="#QuitterProgramme" prefHeight="26.0" prefWidth="150.0" text="Quitter" underline="true"/>
+   </children>
+</AnchorPane>
