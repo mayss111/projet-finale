@@ -11,13 +11,15 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import models.Question;
 import services.QuestionService;
+import utils.EmailSender;
 
+import jakarta.mail.MessagingException;
 import java.io.IOException;
 
 public class CreerController {
 
     @FXML
-    private Button Acceuil;
+    private Button goAcceuil;
 
     @FXML
     private Button Quitter;
@@ -26,7 +28,7 @@ public class CreerController {
     private Button ajouterQuiz;
 
     @FXML
-    private Button goAcceuil;
+    private TextField questionTF;
 
     @FXML
     private TextField prop1TF;
@@ -37,18 +39,13 @@ public class CreerController {
     @FXML
     private TextField propcTF;
 
-    @FXML
-    private TextField questionTF;
+    private int quizId;
+    private Question questionExistante = null;
 
-    private int quizId; // ID du quiz à associer
-    private Question questionExistante = null; // Pour modification
-
-    // Setter appelé par FileController
     public void setQuizId(int quizId) {
         this.quizId = quizId;
     }
 
-    // Setter pour modification d'une question
     public void setQuestion(Question q) {
         this.questionExistante = q;
         questionTF.setText(q.getQuestion());
@@ -59,7 +56,7 @@ public class CreerController {
 
     @FXML
     void QuitterProgramme(ActionEvent event) {
-        System.exit(0); // Ferme l'application
+        System.exit(0);
     }
 
     @FXML
@@ -71,6 +68,7 @@ public class CreerController {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+            showAlert("Erreur", "Impossible de charger la page d'accueil.");
         }
     }
 
@@ -87,14 +85,14 @@ public class CreerController {
         }
 
         QuestionService service = new QuestionService();
+        String action, message;
 
         if (questionExistante == null) {
-            // Création
             Question nouvelle = new Question(texte, prop1, prop2, propc, quizId);
             service.ajouter(nouvelle);
-            showAlert("Succès", "✅ Question ajoutée avec succès !");
+            action = "ajoutée";
+            message = "✅ Question ajoutée avec succès !";
         } else {
-            // Modification
             Question modifiee = new Question(
                     questionExistante.getIdq(),
                     quizId,
@@ -104,7 +102,32 @@ public class CreerController {
                     propc
             );
             service.modifier(modifiee);
-            showAlert("Succès", "✅ Question modifiée avec succès !");
+            action = "modifiée";
+            message = "✅ Question modifiée avec succès !";
+        }
+
+        showAlert("Succès", message);
+
+        // Envoi de l'email
+        try {
+            String sujet = "Question " + action + " - Quiz #" + quizId;
+            String corps = String.format("""
+                    Bonjour,
+
+                    Une question a été %s dans le quiz #%d.
+
+                    Question : %s
+                    Proposition 1 : %s
+                    Proposition 2 : %s
+                    Bonne réponse : %s
+
+                    Cordialement.
+                    """, action, quizId, texte, prop1, prop2, propc);
+
+            EmailSender.sendSimpleEmail("mrazizgamerlol00@gmail.com", sujet, corps);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+            showAlert("Erreur d'email", "❌ L'email de notification n'a pas pu être envoyé.");
         }
     }
 

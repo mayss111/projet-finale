@@ -18,7 +18,7 @@
       <Label layoutX="112.0" layoutY="29.0" prefHeight="54.0" prefWidth="449.0" text="Afficher Les Quiz" wrapText="true">
          <font>
             <Font name="Corbel Light" size="46.0" />
-     git --    </font>
+         </font>
          <textFill>
             <LinearGradient cycleMethod="REFLECT" endX="0.7017045165553236" endY="0.4583333035310109" startX="0.6486742424242424" startY="0.5909091053587017">
                <stops>
