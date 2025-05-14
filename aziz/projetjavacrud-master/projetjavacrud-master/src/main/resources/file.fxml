@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FileController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFF8B4FF;" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="idquizTF" layoutX="372.0" layoutY="79.0" prefHeight="26.0" prefWidth="150.0" promptText="Taper Id Quiz" />
+            <Label layoutX="14.0" layoutY="174.0" text="➤ Pour accéder à une page de création de quiz.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="224.0" text="➤ Pour afficher la liste des quiz disponibles à compléter.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="312.0" text="➤ Pour Supprimer un Quiz .">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="83.0" text="➤ Entrer l'ID du Quiz">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="274.0" layoutY="14.0" text="Acceuil">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="44.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REPEAT" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3294117748737335" green="0.6627451181411743" blue="0.10588235408067703" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.021052632480859756" green="0.021052632480859756" blue="0.021052632480859756" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="Quitter" layoutX="372.0" layoutY="351.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Quitter" underline="true" />
+            <Button fx:id="SupprimerQuiz" layoutX="372.0" layoutY="308.0" mnemonicParsing="false" onAction="#SupprimerQuiz" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Supprimer" underline="true" />
+            <Button fx:id="AfficherQuiz" layoutX="372.0" layoutY="219.0" mnemonicParsing="false" onAction="#AfficherQuiz" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Afficher un Quiz" underline="true" />
+            <Button fx:id="CreerQuiz" layoutX="372.0" layoutY="169.0" mnemonicParsing="false" onAction="#CreerQuiz" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Créer un Quiz" underline="true" />
+            <Label layoutX="14.0" layoutY="271.0" text="➤ Pour Modifier un Quiz .">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="ModifierQuiz" layoutX="372.0" layoutY="266.0" mnemonicParsing="false" onAction="#ModifierQuiz" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Modifier" underline="true" />
+            <Label layoutX="15.0" layoutY="116.0" text="➤ Afficher Tentative">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="AfficherTenta" layoutX="372.0" layoutY="120.0" mnemonicParsing="false" onAction="#AfficherTenta" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: FFA500;" text="Afficher Tentative" underline="true" />
+         </children>
+    </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+  </children>
+</VBox>

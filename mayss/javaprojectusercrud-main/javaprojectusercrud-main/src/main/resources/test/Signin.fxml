@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="blue-panel" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label text="Login" textFill="#2196f3">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </Label>
+        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="480.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="tfEmail" promptText="Email" styleClass="tf_box" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label fx:id="lbEmail" prefHeight="30.0" prefWidth="463.0" textFill="RED" />
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="97.0" prefWidth="480.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                    <children>
+                        <PasswordField fx:id="tfPassword" prefHeight="30.0" prefWidth="434.0" promptText="Password" styleClass="tf_box" stylesheets="@styles.css" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label fx:id="lbPassword" prefHeight="30.0" prefWidth="463.0" textFill="RED" />
+            </children>
+        </VBox>
+        <Button fx:id="btnSignIn1" mnemonicParsing="false" onAction="#fnSignIn" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="Sign In" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnSignup" mnemonicParsing="false" onAction="#fnSignup" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="Sign In" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="btnForgetPass" mnemonicParsing="false" onAction="#btnForgetPassAction" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: transparent;" text="Reset Password" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0"
+            style="-fx-background-color: #f4f4f4;"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.TreeviewcoursController">
+
+    <!-- Champs de formulaire -->
+    <Label layoutX="30.0" layoutY="20.0" text="ID :" />
+    <TextField fx:id="idTF" layoutX="120.0" layoutY="15.0" prefWidth="200.0"/>
+
+    <Label layoutX="30.0" layoutY="60.0" text="Titre :" />
+    <TextField fx:id="titreTF" layoutX="120.0" layoutY="55.0" prefWidth="200.0"/>
+
+    <Label layoutX="30.0" layoutY="100.0" text="Subject :" />
+    <TextField fx:id="subjectTF" layoutX="120.0" layoutY="95.0" prefWidth="200.0"/>
+
+    <Label layoutX="30.0" layoutY="140.0" text="Niveau :" />
+    <TextField fx:id="niveauTF" layoutX="120.0" layoutY="135.0" prefWidth="200.0"/>
+
+    <Label layoutX="30.0" layoutY="180.0" text="Contents :" />
+    <TextField fx:id="contentsTF" layoutX="120.0" layoutY="175.0" prefWidth="200.0"/>
+
+    <!-- Boutons -->
+    <Button text="Modifier"
+            layoutX="350.0" layoutY="55.0"
+            prefWidth="100.0"
+            onAction="#modifierCours"/>
+
+    <Button text="Supprimer"
+            layoutX="350.0" layoutY="95.0"
+            prefWidth="100.0"
+            onAction="#supprimerCours"/>
+
+    <Button text="Contenu"
+            layoutX="350.0" layoutY="135.0"
+            prefWidth="100.0"
+            onAction="#ouvrirContenu"/>
+
+    <Button text="Rafraîchir"
+            layoutX="350.0" layoutY="175.0"
+            prefWidth="100.0"
+            onAction="#rafraichirListeCours"/>
+
+    <!-- TableView -->
+    <TableView fx:id="courseTable"
+               layoutX="30.0" layoutY="230.0"
+               prefWidth="740.0" prefHeight="330.0">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="100.0"/>
+            <TableColumn fx:id="titreCol" text="Titre" prefWidth="150.0"/>
+            <TableColumn fx:id="subjectCol" text="Subject" prefWidth="200.0"/>
+            <TableColumn fx:id="niveauCol" text="Niveau" prefWidth="150.0"/>
+            <TableColumn fx:id="contentsCol" text="Contents" prefWidth="250.0"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>

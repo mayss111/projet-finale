@@ -1,0 +1,16 @@
+/* style.css */
+.root {
+    -fx-background-color: #fff8b4;
+}
+
+.button {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.text-field {
+    -fx-background-color: #ddd;
+    -fx-font-size: 14px;
+}

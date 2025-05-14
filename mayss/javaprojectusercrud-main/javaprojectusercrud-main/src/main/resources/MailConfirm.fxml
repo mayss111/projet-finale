@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="Gold-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConfirmMailController">
+    <children>
+        <VBox fx:id="vboxCode" alignment="CENTER" prefHeight="119.0" prefWidth="480.0">
+            <children>
+                <Label prefHeight="28.0" prefWidth="463.0" text="We Sent code to your email please confirm your email" textFill="#ced329">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <VBox prefHeight="97.0" prefWidth="480.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="tfCode" alignment="CENTER" prefHeight="30.0" prefWidth="442.0" styleClass="tf-box" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <Label fx:id="lbCodeError" prefHeight="30.0" prefWidth="463.0" textFill="RED" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <Button fx:id="btnConfirmerCode" alignment="CENTER" mnemonicParsing="false" onAction="#fnConfirmerCode" prefHeight="38.0" prefWidth="223.0" styleClass="Gold-btn" text="Confirm" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnLogOut" alignment="CENTER" mnemonicParsing="false" onAction="#fnLogOut" prefHeight="38.0" prefWidth="223.0" style="-fx-background-color: #ff0000;" text="Log out" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <Button fx:id="btnResendCode" mnemonicParsing="false" onAction="#fnResendCode" prefHeight="38.0" prefWidth="223.0" styleClass="Gold-btn" text="Send Code" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+    </children>
+</VBox>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1315.0" styleClass="bodybg" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardAdminController">
+    <top><HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0" stylesheets="@fxml.css" BorderPane.alignment="CENTER">
+        <children>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="200.0" />
+            <ImageView fitHeight="43.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@imgs/logo.png.jpg" />
+                </image>
+            </ImageView>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0">
+                <children>
+                    <TextField prefHeight="26.0" prefWidth="225.0" promptText="Search" styleClass="round-layout" />
+                    <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@imgs/symbole-de-linterface-de-recherche.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                <children>
+                    <ImageView fitHeight="57.0" fitWidth="248.0" layoutX="192.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0">
+                        <image>
+                            <Image url="@imgs/manatk.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="231.0">
+                <children>
+                    <Label fx:id="lbUserNameGlobal" onMouseClicked="#fnUserName" prefHeight="50.0" prefWidth="209.0">
+                        <font>
+                            <Font name="Frank Ruehl CLM Bold" size="15.0" />
+                        </font>
+                    </Label>
+                    <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@imgs/ninja.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+        </children>
+    </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="830.0" prefWidth="256.0" stylesheets="@fxml.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="259.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Browse">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/game-control-pour-pc.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Play">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/achats.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Shop">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/signet.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="BookMarked">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/arbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Get coach">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="260.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Watch">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/jouer.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Watch plays">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/conference-video.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Stream">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="256.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/soccer-world-cup.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Tournaments">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/arbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Get coached">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="210.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Watch">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/ninja.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Become a gamer">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/sifflet-darbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Become a coach">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="274.0">
+                                    <children>
+                                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #fdc500;" text="Apply now !" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="529.0" prefHeight="228.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Admin">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox onMouseClicked="#fnPaneUsers" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/user.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Users">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox onMouseClicked="#fnPaneAdmin" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/admin.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Add Admins">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="274.0" />
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#fnProfil" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #43e8d8;" text="Settings" />
+                                <Button mnemonicParsing="false" onAction="#fnLogOut" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #ff5252;" text="Log Out" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane fx:id="pnprofile" prefHeight="543.0" prefWidth="1203.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox layoutX="212.0" layoutY="71.0" prefHeight="47.0" prefWidth="452.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfPrenom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="530.0" promptText="Name" styleClass="tf" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="34.0" fitWidth="27.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                                    </HBox.margin>
+                                    <image>
+
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="213.0" layoutY="132.0" prefHeight="40.0" prefWidth="413.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfNom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="530.0" promptText="Family Name" styleClass="tf" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="209.0" layoutY="231.0" prefHeight="40.0" prefWidth="530.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfAdresse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="496.0" promptText="Adresse" styleClass="tf" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="209.0" layoutY="300.0" prefHeight="30.0" prefWidth="530.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email User" styleClass="tf" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                                    </HBox.margin>
+                                    <image>
+
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="14.0" prefHeight="64.0" prefWidth="159.0" text="PROFIL details" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="62.0" prefHeight="64.0" prefWidth="74.0" text="Name:" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello11" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="132.0" prefHeight="64.0" prefWidth="74.0" text="Family Name:" textFill="#c39f6d" />
+                        <Label fx:id="hello2" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="170.0" prefHeight="64.0" prefWidth="159.0" text="Contact info" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="224.0" prefHeight="64.0" prefWidth="74.0" text="Adresse" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="288.0" prefHeight="64.0" prefWidth="74.0" text="Email :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btnModifProfil" layoutX="862.0" layoutY="277.0" mnemonicParsing="false" onAction="#changeProfilAction" prefHeight="40.0" prefWidth="144.0" styleClass="pink1-btn" text="SAVE CHANGES">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="lbFullNameProfil" layoutX="614.0" layoutY="117.0" opacity="0.7" prefHeight="23.0" prefWidth="411.0" />
+                        <Label fx:id="lbFullAddresseProfil" layoutX="614.0" layoutY="181.0" opacity="0.7" prefHeight="23.0" prefWidth="473.0" />
+                        <Label fx:id="lbNumTelProfil" layoutX="230.0" layoutY="279.0" opacity="0.7" prefHeight="23.0" prefWidth="411.0" />
+                        <Label fx:id="lbEmailProfil" layoutX="230.0" layoutY="347.0" opacity="0.7" prefHeight="23.0" prefWidth="460.0" />
+                        <Label fx:id="hello21" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="338.0" prefHeight="64.0" prefWidth="159.0" text="Change Password" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1112" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="380.0" prefHeight="64.0" prefWidth="74.0" text="Password :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello11111" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="452.0" prefHeight="64.0" prefWidth="136.0" text="Confirme Password :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox layoutX="253.0" layoutY="390.0" prefHeight="44.0" prefWidth="482.0" styleClass="tf-box">
+                            <children>
+                                <PasswordField fx:id="tfPassword" prefHeight="44.0" prefWidth="598.0" promptText="New Password" />
+                            </children>
+                        </HBox>
+                        <Label fx:id="lbPasswordReset" layoutX="227.0" layoutY="441.0" opacity="0.7" prefHeight="17.0" prefWidth="200.0" />
+                        <HBox layoutX="256.0" layoutY="461.0" prefHeight="44.0" prefWidth="484.0" styleClass="tf-box">
+                            <children>
+                                <PasswordField fx:id="tfConfirmPassword" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Confime New Password" styleClass="tf" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font></PasswordField>
+                            </children>
+                        </HBox>
+                        <Label fx:id="lbConfirmePasswordReset" layoutX="274.0" layoutY="512.0" opacity="0.7" prefHeight="17.0" prefWidth="344.0" />
+                        <Button fx:id="btnResetPass" layoutX="856.0" layoutY="447.0" mnemonicParsing="false" onAction="#ResetPasswordAction" prefHeight="40.0" prefWidth="152.0" styleClass="pink1-btn" text="RESET PASSWORD">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane fx:id="pnUsers" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <VBox id="VBox" fx:id="VBoxShowUsers" prefHeight="744.0" prefWidth="1045.0" styleClass="white-pane" >
+                            <children>
+                                <GridPane prefHeight="665.0" prefWidth="1046.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="178.19998779296876" minHeight="10.0" prefHeight="56.79999389648438" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="482.4000061035157" minHeight="10.0" prefHeight="482.4000061035157" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TableView fx:id="tableViewUsers" prefHeight="818.0" prefWidth="1046.0" style="-fx-alignment: center;" >
+                                            <columns>
+                                                <TableColumn fx:id="usernameCol" maxWidth="3800.0" minWidth="20.0" prefWidth="266.3999938964844" style="-fx-alignment: center;" text="name" />
+                                                <TableColumn fx:id="familynameCol" maxWidth="3800.0" minWidth="20.0" prefWidth="193.5999755859375" style="-fx-alignment: center;" text="Family name" />
+                                                <TableColumn fx:id="emailCol" maxWidth="4500.0" minWidth="20.0" prefWidth="175.2000732421875" style="-fx-alignment: center;" text="Email" />
+                                                <TableColumn fx:id="isVerifiedCol" maxWidth="4000.0" minWidth="0.0" prefWidth="192.800048828125" style="-fx-alignment: center;" text="Is_Verified" />
+                                                <TableColumn fx:id="SupprimerCol" maxWidth="3300.0" minWidth="0.0" prefWidth="0.0" style="-fx-alignment: center;" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="900.0">
+                                            <children>
+                                                <FontAwesomeIconView fill="#c39f6d" glyphName="SEARCH" size="25">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" />
+                                                    </HBox.margin>
+                                                </FontAwesomeIconView>
+                                                <TextField fx:id="tfSearch" prefHeight="44.0" prefWidth="650.0" style="-fx-border-radius: 20px; -fx-border-width: 2px; -fx-background-color: white; -fx-border-color: #c39f6d;">
+                                                    <HBox.margin>
+                                                        <Insets left="20.0" right="170.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <Button fx:id="btnChart" mnemonicParsing="false" onAction="#handleChart" prefHeight="34.0" prefWidth="55.0" styleClass="pink1-btn">
+                                                    <font>
+                                                        <Font name="System Bold" size="12.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" wrappingWidth="17.48578643798828" />
+                                                    </graphic>
+                                                </Button>
+                                                <ComboBox fx:id="comboBox" onAction="#Select" prefHeight="30.0" prefWidth="255.0" promptText="Trier par :" style="-fx-border-color: #c39f6d;" styleClass="trans-btn-white-border">
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" right="20.0" />
+                                                    </HBox.margin>
+                                                </ComboBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                    </children></Pane>
+                <Pane fx:id="pnAddAdmin" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" layoutX="-12.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="862.0" stylesheets="@styles.css">
+                            <children>
+                                <VBox prefHeight="61.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="tfNomAdmin" promptText="Family Name" styleClass="tf_box_Admin" HBox.hgrow="ALWAYS">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                                                    <HBox.margin>
+                                                        <Insets right="15.0" />
+                                                    </HBox.margin>
+                                                </FontAwesomeIconView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="lbNomAdmin" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="104.0" prefHeight="61.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="tfPrenomAmin" promptText="Name" styleClass="tf_box_Admin" HBox.hgrow="ALWAYS">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                                                    <HBox.margin>
+                                                        <Insets right="15.0" />
+                                                    </HBox.margin>
+                                                </FontAwesomeIconView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="lbPrenomAdmin" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="148.0" prefHeight="61.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="tfAdress" promptText="Adress" styleClass="tf_box_Admin" HBox.hgrow="ALWAYS">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                                                    <HBox.margin>
+                                                        <Insets right="15.0" />
+                                                    </HBox.margin>
+                                                </FontAwesomeIconView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="lbAdress" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <VBox prefHeight="66.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                            <children>
+                                                <TextField fx:id="tfEmailAdmin" prefHeight="30.0" prefWidth="428.0" promptText="Email" styleClass="tf_box_Admin" HBox.hgrow="ALWAYS" />
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0" top="15.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Label fx:id="lbEmailAdmin" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="40.0" prefHeight="62.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="478.0">
+                                            <children>
+                                                <TextField fx:id="tfConfirmEmailAdmin" prefHeight="30.0" prefWidth="428.0" promptText="Confirm Email" styleClass="tf_box_Admin" HBox.hgrow="ALWAYS">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                                                    <HBox.margin>
+                                                        <Insets right="15.0" />
+                                                    </HBox.margin>
+                                                </FontAwesomeIconView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="lbConfirmEmailAdmin" prefHeight="31.0" prefWidth="469.0" textFill="RED">
+                                            <padding>
+                                                <Insets top="-30.0" />
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="40.0" prefHeight="77.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                            <children>
+                                                <PasswordField fx:id="tfPasswordAdmin" prefHeight="30.0" prefWidth="443.0" promptText="Password">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </PasswordField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="448.0" layoutY="31.0" size="1.3em" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="15.0" top="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Label fx:id="lbPasswordAdmin" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="10.0" layoutY="40.0" prefHeight="77.0" prefWidth="480.0">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="437.0">
+                                            <children>
+                                                <PasswordField fx:id="tfConfirmPasswordAdmin" prefHeight="30.0" prefWidth="443.0" promptText="Confirm Password">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" />
+                                                    </HBox.margin>
+                                                </PasswordField>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="448.0" layoutY="31.0" size="1.3em" />
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="lbConfirmPasswordAdmin" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+                                    </children>
+                                </VBox>
+                                <Button fx:id="btnsignUp" mnemonicParsing="false" onAction="#fnSignup" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="Add Admin" textFill="WHITE">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="15.0" right="15.0" top="20.0" />
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" />
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
