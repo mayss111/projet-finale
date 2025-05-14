@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="527.0" prefWidth="995.0" style="-fx-background-color: FFEDC4FF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.neoedu.controllers.AfficherInscriptions">
+   <children>
+      <TableView fx:id="tableView" layoutY="14.0" prefHeight="314.0" prefWidth="955.0">
+        <columns>
+          <TableColumn fx:id="nomCol" prefWidth="75.19997882843018" text="Nom" />
+          <TableColumn fx:id="prenomCol" prefWidth="72.00003051757812" text="Prenom" />
+            <TableColumn fx:id="cinCol" prefWidth="69.60000610351562" text="CIN" />
+            <TableColumn fx:id="niveauCol" prefWidth="76.80006408691406" text="niveau" />
+            <TableColumn fx:id="atelierCol" prefWidth="88.0" text="ateliers" />
+            <TableColumn fx:id="coursCol" prefWidth="95.199951171875" text="cours" />
+            <TableColumn fx:id="abonnementCol" minWidth="4.0" prefWidth="95.20001220703125" text="abonnement" />
+            <TableColumn fx:id="methodeCol" minWidth="0.0" prefWidth="72.0" text="methode" />
+            <TableColumn fx:id="montantCol" minWidth="5.5999755859375" prefWidth="70.39996337890625" text="montant " />
+            <TableColumn fx:id="statueCol" prefWidth="64.800048828125" text="statue" />
+            <TableColumn fx:id="finCol" minWidth="0.0" prefWidth="127.9998779296875" text="fin de l'abonnement" />
+            <TableColumn fx:id="idCol" prefWidth="103.2000732421875" text="id" />
+        </columns>
+      </TableView>
+      <Button layoutX="210.0" layoutY="458.0" mnemonicParsing="false" onAction="#supprimerPaiement" prefHeight="44.0" prefWidth="95.0" text="suprimer" />
+      <TextField fx:id="idDeleteTF" layoutX="20.0" layoutY="464.0" prefHeight="32.0" prefWidth="178.0" promptText="id a sup" />
+      <Button layoutX="30.0" layoutY="338.0" mnemonicParsing="false" onAction="#rafraichirTable" text="refresh" />
+      <TextField fx:id="nomField" layoutX="336.0" layoutY="388.0" />
+      <TextField fx:id="prenomField" layoutX="336.0" layoutY="416.0" />
+      <TextField fx:id="cinField" layoutX="336.0" layoutY="442.0" />
+      <TextField fx:id="niveauEtudeField" layoutX="336.0" layoutY="467.0" />
+      <TextField fx:id="coursField" layoutX="486.0" layoutY="388.0" />
+      <TextField fx:id="typeAbonnementField" layoutX="486.0" layoutY="416.0" />
+      <TextField fx:id="methodePaiementField" layoutX="486.0" layoutY="445.0" />
+      <TextField fx:id="atelierField" layoutX="336.0" layoutY="489.0" />
+      <TextField fx:id="montantField" layoutX="486.0" layoutY="467.0" />
+      <TextField fx:id="statutPaiementField" layoutX="486.0" layoutY="489.0" />
+      <Button layoutX="642.0" layoutY="445.0" mnemonicParsing="false" onAction="#modifierPaiement" prefHeight="44.0" prefWidth="95.0" text="modifier" />
+      <Label layoutX="20.0" layoutY="410.0" prefHeight="51.0" prefWidth="190.0" text="suppression d'une inscription:" textFill="#0450e7">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="345.0" prefHeight="51.0" prefWidth="418.0" text="modfification d'une inscription:(clicker sur l'inscription a modifier):" textFill="#1282d7">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="40.0" layoutX="89.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/refresh.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="163.0" layoutX="827.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/paraltre.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

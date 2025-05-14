@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="809.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+    <children>
+        <AnchorPane fx:id="MainContainer" layoutX="39.0" layoutY="39.0" prefHeight="506.0" prefWidth="742.0" style="-fx-background-color: #D19D8D; -fx-background-radius: 25;">
+            <children>
+                <HBox alignment="CENTER" layoutX="575.0" layoutY="13.0" prefHeight="66.0" prefWidth="170.0" spacing="20.0">
+                    <children>
+                        <ImageView fitHeight="64.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@imgs/user.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="lbUserNameGlobal" text="Label">
+                            <font>
+                                <Font name="Noto Serif Regular" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="103.0" layoutY="13.0" prefHeight="66.0" prefWidth="434.0" spacing="74.0">
+                    <children>
+                        <Label fx:id="btn_home" onMouseClicked="#Home_display" prefHeight="26.0" prefWidth="54.0" text="Home">
+                            <font>
+                                <Font name="Noto Serif Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="btn_settings" onMouseClicked="#Settings_display" prefHeight="26.0" prefWidth="66.0" text="settings">
+                            <font>
+                                <Font name="Noto Serif Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label text="lorem">
+                            <font>
+                                <Font name="Noto Serif Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label text="lorem">
+                            <font>
+                                <Font name="Noto Serif Italic" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <AnchorPane fx:id="AnWelcome" layoutX="49.0" layoutY="111.0" prefHeight="330.0" prefWidth="658.0" visible="false">
+                    <children>
+                        <Label layoutX="14.0" layoutY="32.0" prefHeight="176.0" prefWidth="113.0" text="W" textFill="RED">
+                            <font>
+                                <Font name="Sylfaen" size="96.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="98.0" prefHeight="66.0" prefWidth="227.0" text="e l c o m e">
+                            <font>
+                                <Font name="Sylfaen" size="50.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lbUserNameGlobal" layoutX="329.0" layoutY="102.0" prefHeight="56.0" prefWidth="214.0" text="Label" textFill="RED">
+                            <font>
+                                <Font name="Sylfaen" size="50.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pnprofile" layoutX="30.0" layoutY="104.0" prefHeight="383.0" prefWidth="714.0">
+                    <children>
+                        <HBox alignment="CENTER" layoutY="35.0" prefHeight="74.0" prefWidth="702.0" spacing="15.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="74.0" prefWidth="290.0" spacing="20.0">
+                                    <children>
+                                        <Label text="Name:">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfPrenom" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="74.0" prefWidth="290.0" spacing="20.0">
+                                    <children>
+                                        <Label text="Family Name:">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfNom" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="152.0" prefHeight="74.0" prefWidth="714.0" spacing="15.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="74.0" prefWidth="290.0" spacing="20.0">
+                                    <children>
+                                        <Label text="Adresse:">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfAdresse" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="74.0" prefWidth="290.0" spacing="20.0">
+                                    <children>
+                                        <Label text="Email :">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfEmail" prefHeight="26.0" prefWidth="159.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutY="260.0" prefHeight="66.0" prefWidth="714.0" spacing="15.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="74.0" prefWidth="290.0" spacing="20.0">
+                                    <children>
+                                        <Label text="Password :">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfPassword" prefHeight="26.0" prefWidth="143.0" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="84.0" prefWidth="303.0" spacing="20.0">
+                                    <children>
+                                        <Label prefHeight="22.0" prefWidth="193.0" text="Confirmation:">
+                                            <font>
+                                                <Font name="Noto Serif Italic" size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="tfConfirmPassword" prefHeight="26.0" prefWidth="250.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <Line endX="506.70709228515625" endY="-1.52587890625E-5" layoutX="147.2928924560547" layoutY="31.292877197265625" startX="-100.0" />
+                        <Line endX="503.30706787109375" layoutX="148.2928924560547" layoutY="151.29287719726562" startX="-100.0" />
+                        <Line endX="505.70709228515625" endY="-5.292877197265625" layoutX="147.0" layoutY="259.0" startX="-100.0" />
+                        <Label layoutX="29.0" prefHeight="32.0" prefWidth="192.0" text="PROFIL details">
+                            <font>
+                                <Font name="Noto Serif Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="119.0" prefHeight="32.0" prefWidth="192.0" text="Contact info">
+                            <font>
+                                <Font name="Noto Serif Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="226.0" prefHeight="32.0" prefWidth="192.0" text="Change Password">
+                            <font>
+                                <Font name="Noto Serif Italic" size="22.0" />
+                            </font>
+                        </Label>
+                        <HBox layoutX="14.0" layoutY="319.0" prefHeight="74.0" prefWidth="426.0">
+                            <children>
+                                <Pane fx:id="btnModifProfil" onMousePressed="#changeProfilAction" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label layoutX="28.0" layoutY="10.0" prefHeight="54.0" prefWidth="150.0" text="Save Changes" textFill="#d11818">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="btnResetPass" onMousePressed="#ResetPasswordAction" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label layoutX="59.0" layoutY="20.0" prefHeight="35.0" prefWidth="82.0" text="Reset">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="ExpendObj" layoutX="8.0" layoutY="9.0" onMouseClicked="#DomainExpantion" prefHeight="74.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 250;" />
+            </children></AnchorPane>
+        <AnchorPane layoutX="1.0" prefHeight="56.0" prefWidth="59.0" style="-fx-background-color: black; -fx-background-radius: 250;" />
+        <AnchorPane layoutX="610.0" layoutY="495.0" prefHeight="74.0" prefWidth="192.0" style="-fx-background-color: black; -fx-background-radius: 250;">
+            <children>
+                <Pane layoutX="29.0" layoutY="9.0" onMousePressed="#fnLogOut" prefHeight="62.0" prefWidth="143.0">
+                    <children>
+                        <Label layoutX="11.0" layoutY="12.0" text="Log Out" textFill="RED">
+                            <font>
+                                <Font name="DejaVu Serif Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children></AnchorPane>
+        <ImageView fitHeight="150.0" fitWidth="81.0" layoutX="1.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imgs/stand1.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

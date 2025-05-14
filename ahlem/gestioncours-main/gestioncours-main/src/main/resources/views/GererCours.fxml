@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.CourseController"  stylesheets="@views/style.css" >
+
+
+        <!-- Champ ID -->
+        <TextField fx:id="idTF"
+                   layoutX="30.0" layoutY="30.0"
+                   prefWidth="300.0"
+                   promptText="ID du cours" />
+
+        <!-- Champ Titre -->
+        <TextField fx:id="titreTF"
+                   layoutX="30.0" layoutY="70.0"
+                   prefWidth="300.0"
+                   promptText="Titre du cours" />
+
+        <!-- Champ Sujet -->
+        <TextField fx:id="subjectTF"
+                   layoutX="30.0" layoutY="110.0"
+                   prefWidth="300.0"
+                   promptText="Sujet" />
+
+        <!-- Champ Niveau -->
+        <TextField fx:id="niveauTF"
+                   layoutX="30.0" layoutY="150.0"
+                   prefWidth="300.0"
+                   promptText="Niveau" />
+
+        <!-- Champ Contenu -->
+        <TextField fx:id="contentsTF"
+                   layoutX="30.0" layoutY="190.0"
+                   prefWidth="300.0"
+                   promptText="Contenu" />
+
+        <!-- Bouton Ajouter -->
+        <Button fx:id="ajouterBtn"
+                layoutX="350.0" layoutY="190.0"
+                prefWidth="100.0"
+                text="Ajouter"
+                onAction="#ajouterCours" />
+
+        <!-- Bouton Afficher -->
+        <Button fx:id="afficherBtn"
+                layoutX="350.0" layoutY="240.0"
+                prefWidth="100.0"
+                text="Afficher"
+                onAction="#afficherCours" />
+
+</AnchorPane>

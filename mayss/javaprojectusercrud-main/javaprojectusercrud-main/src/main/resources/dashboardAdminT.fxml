@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="bodybg" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardControllertest">
+    <top><HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0" stylesheets="@fxml.css" BorderPane.alignment="CENTER">
+        <children>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="200.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0">
+                <children>
+                    <TextField prefHeight="26.0" prefWidth="225.0" promptText="Search" styleClass="round-layout" />
+                    <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@imgs/search_icon.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="254.0">
+                <children>
+                    <Label fx:id="lbUserNameGlobal" onMouseClicked="#fnUserName" prefHeight="50.0" prefWidth="203.0">
+                        <font>
+                            <Font name="Frank Ruehl CLM Bold" size="15.0" />
+                        </font>
+                    </Label>
+                    <ImageView fitHeight="46.0" fitWidth="44.0" onMouseClicked="#hiden_anchor" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@imgs/ninja.png" />
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+        </children>
+    </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="830.0" prefWidth="256.0" stylesheets="@fxml.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="227.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Browse">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/achats.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/signet.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="niveau">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/arbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="cours">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="233.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Watch">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/jouer.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="videos">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/conference-video.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Stream">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/arbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="Get coached">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="210.0" prefWidth="256.0">
+                    <children>
+                        <Label prefHeight="50.0" prefWidth="80.0" text="Watch">
+                            <VBox.margin>
+                                <Insets left="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="282.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@imgs/sifflet-darbitre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <Label lineSpacing="15.0" prefHeight="50.0" prefWidth="412.0" text="how to be a teacher ">
+                                    <font>
+                                        <Font name="Frank Ruehl CLM Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" />
+                        <Separator prefWidth="200.0" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#fnProfil" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #43e8d8;" text="Settings" />
+                                <Button mnemonicParsing="false" onAction="#fnLogOut" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #ff5252;" text="Log Out" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <Label layoutX="75.0" layoutY="67.0" text="Nom" />
+                        <TextField fx:id="nom_tf" layoutX="216.0" layoutY="63.0" />
+                        <Label layoutX="79.0" layoutY="129.0" text="Prenom" />
+                        <TextField fx:id="prenom_tf" layoutX="220.0" layoutY="125.0" />
+                        <Label layoutX="79.0" layoutY="205.0" text="Age" />
+                        <TextField fx:id="age_tf" layoutX="220.0" layoutY="201.0" />
+                        <Button layoutX="549.0" layoutY="63.0" mnemonicParsing="false" onAction="#add" text="add" />
+                        <Button layoutX="549.0" layoutY="189.0" mnemonicParsing="false" onAction="#afficher" text="Display" />
+                        <ScrollPane fx:id="boxh" layoutX="75.0" layoutY="303.0" prefHeight="413.0" prefWidth="548.0">
+                            <content>
+                                <HBox prefHeight="100.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                        <Button fx:id="backInterface" layoutX="815.0" layoutY="63.0" mnemonicParsing="false" onAction="#openInterface" prefHeight="25.0" prefWidth="109.0" text="Button" />
+                    </children>
+                </Pane>
+                <Pane fx:id="pnprofile" prefHeight="543.0" prefWidth="1203.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <HBox layoutX="212.0" layoutY="71.0" prefHeight="47.0" prefWidth="452.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfPrenom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="530.0" promptText="Name" styleClass="tf" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="34.0" fitWidth="27.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                                    </HBox.margin>
+                                    <image>
+
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="213.0" layoutY="132.0" prefHeight="40.0" prefWidth="413.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfNom" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="530.0" promptText="Family Name" styleClass="tf" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="209.0" layoutY="231.0" prefHeight="40.0" prefWidth="530.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfAdresse" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="496.0" promptText="Adresse" styleClass="tf" />
+                            </children>
+                        </HBox>
+                        <HBox layoutX="209.0" layoutY="300.0" prefHeight="30.0" prefWidth="530.0" styleClass="tf-box">
+                            <children>
+                                <TextField fx:id="tfEmail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Email User" styleClass="tf" HBox.hgrow="ALWAYS" />
+                                <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                                    </HBox.margin>
+                                    <image>
+
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <Label fx:id="hello" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="14.0" prefHeight="64.0" prefWidth="159.0" text="PROFIL details" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="62.0" prefHeight="64.0" prefWidth="74.0" text="Name:" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello11" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="132.0" prefHeight="64.0" prefWidth="74.0" text="Family Name:" textFill="#c39f6d" />
+                        <Label fx:id="hello2" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="170.0" prefHeight="64.0" prefWidth="159.0" text="Contact info" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="224.0" prefHeight="64.0" prefWidth="74.0" text="Adresse" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1111" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="288.0" prefHeight="64.0" prefWidth="74.0" text="Email :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btnModifProfil" layoutX="862.0" layoutY="277.0" mnemonicParsing="false" onAction="#changeProfilAction" prefHeight="40.0" prefWidth="144.0" styleClass="pink1-btn" text="SAVE CHANGES">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="lbFullNameProfil" layoutX="614.0" layoutY="117.0" opacity="0.7" prefHeight="23.0" prefWidth="411.0" />
+                        <Label fx:id="lbFullAddresseProfil" layoutX="614.0" layoutY="181.0" opacity="0.7" prefHeight="23.0" prefWidth="473.0" />
+                        <Label fx:id="lbNumTelProfil" layoutX="230.0" layoutY="279.0" opacity="0.7" prefHeight="23.0" prefWidth="411.0" />
+                        <Label fx:id="lbEmailProfil" layoutX="230.0" layoutY="347.0" opacity="0.7" prefHeight="23.0" prefWidth="460.0" />
+                        <Label fx:id="hello21" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="338.0" prefHeight="64.0" prefWidth="159.0" text="Change Password" textFill="#c39f6d">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello1112" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="380.0" prefHeight="64.0" prefWidth="74.0" text="Password :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hello11111" alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="452.0" prefHeight="64.0" prefWidth="136.0" text="Confirme Password :" textFill="#c39f6d">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <HBox layoutX="253.0" layoutY="390.0" prefHeight="44.0" prefWidth="482.0" styleClass="tf-box">
+                            <children>
+                                <PasswordField fx:id="tfPassword" prefHeight="44.0" prefWidth="598.0" promptText="New Password" />
+                            </children>
+                        </HBox>
+                        <Label fx:id="lbPasswordReset" layoutX="227.0" layoutY="441.0" opacity="0.7" prefHeight="17.0" prefWidth="200.0" />
+                        <HBox layoutX="256.0" layoutY="461.0" prefHeight="44.0" prefWidth="484.0" styleClass="tf-box">
+                            <children>
+                                <PasswordField fx:id="tfConfirmPassword" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Confime New Password" styleClass="tf" HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font size="11.0" />
+                                    </font></PasswordField>
+                            </children>
+                        </HBox>
+                        <Label fx:id="lbConfirmePasswordReset" layoutX="274.0" layoutY="512.0" opacity="0.7" prefHeight="17.0" prefWidth="344.0" />
+                        <Button fx:id="btnResetPass" layoutX="856.0" layoutY="447.0" mnemonicParsing="false" onAction="#ResetPasswordAction" prefHeight="40.0" prefWidth="152.0" styleClass="pink1-btn" text="RESET PASSWORD">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <AnchorPane fx:id="Profile_cc" layoutX="772.0" layoutY="-22.0" prefHeight="232.0" prefWidth="236.0" style="-fx-background-color: black;" visible="false">
+                            <children>
+                                <Label layoutX="33.0" layoutY="47.0" prefHeight="24.0" prefWidth="64.0" text="Name:" textFill="WHITE" />
+                                <Label layoutX="33.0" layoutY="85.0" prefHeight="24.0" prefWidth="84.0" text="Family name:" textFill="WHITE" />
+                                <Label layoutX="33.0" layoutY="130.0" prefHeight="24.0" prefWidth="51.0" text="Email:" textFill="WHITE" />
+                                <Button layoutX="73.0" layoutY="183.0" mnemonicParsing="false" onAction="#fnLogOut" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #ff5252;" text="Log Out" />
+                                <Label layoutX="118.0" layoutY="47.0" prefHeight="24.0" prefWidth="64.0" text="u_name" textFill="WHITE" />
+                                <Label layoutX="118.0" layoutY="85.0" prefHeight="24.0" prefWidth="64.0" text="u_fnaùe" textFill="WHITE" />
+                                <Label layoutX="85.0" layoutY="130.0" prefHeight="24.0" prefWidth="64.0" text="u_email" textFill="WHITE" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

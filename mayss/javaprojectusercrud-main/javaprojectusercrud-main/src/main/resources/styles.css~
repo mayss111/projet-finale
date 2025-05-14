@@ -1,0 +1,226 @@
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #ffe8b4
+;
+}
+.trans-btn-white-border{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+.Gold-panel{
+    -fx-background-color: #ffedc4;
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+}
+.tf_box_Admin{
+    -fx-background-color: #000000;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: black;
+}
+.tf{
+    -fx-background-color: transparent;
+}
+.Gold-btn{
+    -fx-background-color: #fd9600;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+}
+
+.parent{
+    -fx-background-color:transparent;
+}
+.pane{
+    -fx-background-color: #ffedc4;
+    -fx-background-size:cover;
+}
+
+.pane2{
+    -fx-background-color: #fd9600;
+}
+
+
+.trans-btn-white-border{
+    -fx-background-color:transparent;
+    -fx-background-radius:5px;
+    -fx-border-color:white;
+    -fx-border-radius:10px;
+    -fx-border-width:2px;
+    -fx-text-fill:white;
+}
+
+.searchh{
+    -fx-border-radius: 20px;
+    -fx-border-width:2px;
+    -fx-background-color:white;
+    -fx-border-color: #da9f2d;
+}
+
+.searchhh{
+    -fx-border-width:2px;
+    -fx-background-color:white;
+    -fx-border-color: #c3bf6d;
+}
+
+.trans-btn-white-border:hover{
+    -fx-background-color:#ae7f42;
+    -fx-background-radius:10px;
+}
+
+.trans-btn-white-border:pressed{
+    -fx-background-color:#b47d39;
+    -fx-background-radius:10px;
+}
+
+.white-pane{
+    -fx-background-color:#FFFFFF;
+}
+
+.white-pane-signIn{
+    /*-fx-background-image:url("../image/signIn.jpg");*/
+    -fx-background-size:cover;
+}
+
+.white-pane-forget{
+    /*-fx-background-image:url("../image/11599.jpg");*/
+    -fx-background-size:cover;
+}
+
+.white-pane-signUp{
+    /* -fx-background-image:url("../image/backforgetLeft.jpg");*/
+    -fx-background-size:cover;
+}
+
+
+
+
+.white-pane-background{
+    -fx-background-color:#FFFFFF;
+    -fx-background-size:cover;
+}
+
+.tf-box{
+    -fx-background-color:transparent;
+    -fx-border-color:#DEDEE4;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+.tf-box:pressed{
+    -fx-background-color:transparent;
+    -fx-border-color:#C27237;
+    -fx-border-width:0px 0px 1px 0px;
+}
+
+
+
+.tf{
+    -fx-background-color:transparent;
+
+}
+.tf:focused{
+    -fx-background-color:transparent;
+    -fx-border-color: #DB9B59;
+    -fx-border-width:0px 0px 0px 3px;
+
+
+}
+.tf-ping{
+    -fx-background-color:transparent;
+    -fx-text-fill:#DB9B59;
+}
+
+
+
+.pink1-btn{
+    -fx-background-color: #c39f6d;
+    -fx-background-radius:10px;
+    -fx-text-fill:#FFFFFF;
+}
+
+.pink1-btn:hover{
+    -fx-background-color:#ae7f42;
+    -fx-background-radius:10px;
+}
+.pink1-btn:pressed{
+    -fx-background-color:#b47d39;
+    -fx-background-radius:10px;
+}
+
+.pink-btn{
+    -fx-background-color: #c39f6d;
+    -fx-background-radius:10px;
+    -fx-text-fill:#FFFFFF;
+}
+
+.pink-btn:hover{
+    -fx-background-color:#d3ae84;
+    -fx-background-radius:10px;
+}
+.pink-btn:pressed{
+    -fx-background-color:#b05f23;
+    -fx-background-radius:10px;
+}
+.pink-btn:focused{
+    -fx-background-color: #d2b998;
+    -fx-border-color: #b38853;
+    -fx-border-width:2px 2px 2px 6px;
+    -fx-border-radius:10px;
+}
+
+.wh-btn{
+    -fx-background-color:white;
+    -fx-background-radius:10px;
+    -fx-text-fill: #c39f6d;
+}
+
+.white-btn{
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-text-fill:white;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filter {
+    -fx-cell-size: 25;
+    -fx-background-color: #c39f6d;
+    -fx-alignment:center;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-alignment:CENTER_LEFT;
+    -fx-alignment:center;
+}
+
+.table-view .cell {
+    -fx-cell-size:30;
+    -fx-alignment:center-left;
+    -fx-text-fill:#000000;
+    -fx-alignment:center;
+
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgb(127 , 172 , 243);
+}
+
+.table-row-cell:selected .text{
+    -fx-fill : white;
+}
+
+
